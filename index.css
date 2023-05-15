@@ -1,0 +1,92 @@
+/*
+Blue #1B244A
+Black #080001
+
+Red #F94F6D
+Glicine #9AABD8 
+
+*/
+
+@font-face{
+    font-family: "Cursed Timer";
+    src: url("CursedTimerUlil-Aznm.ttf");
+}
+:root{
+    --white: #EEEEEE;
+    --black: #080001;
+    --red: #F94F6D;
+    --glicine: #9AABD8;
+    --dark-glicine: #DDD6FE;
+    --blue: #1B244A;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 1rem 3rem 2rem;
+    
+    color: var(--white);
+ 
+    background: #1B244A;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 var(--dark-glicine);
+}
+.game-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.container h3{
+    font-size: 2.5rem;
+}
+.display {
+    width: 1.75em;
+    background: var(--black);
+    padding-top: 1rem;
+    
+    border-radius: 10px;
+    
+    font-size: 5rem;
+    color: var(--red);
+}
+.points-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.display, btn {
+    font-family: "Cursed Timer", Courier New, Courier, monospace;
+}
+.btn {
+    border-radius: 5px;
+}
+.btn {
+    font-family: inherit;
+    color: var(--glicine);
+    background: transparent;
+    padding: .4em;
+    border: 1px solid currentColor;
+}
+.btn:hover {
+    color: var(--dark-glicine);
+    cursor: pointer;
+}
+.reset-btn:hover{
+    color: var(--red);
+}
